@@ -30,14 +30,11 @@ body {
     background-color: #fcfcfc;
 }
 
-
-
-
 /* MAIN LEFT */
-
 .main .main-left {
     padding: 4rem 2rem 2rem 5rem;
     width: 55%;
+    margin-left: 1rem;
 }
 
 .main .main-left h1 {
@@ -53,12 +50,13 @@ body {
     margin: 0;
 }
 
-.main .main-left .form span {
+.main .main-left .form label {
     display: block;
     padding: 1rem 0;
     color: #5c547f;
     font-weight: bold;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .main .main-left .form .input-field {
@@ -71,9 +69,17 @@ body {
     width: 70%;
 }
 
+.main .main-left .form .form-email span{
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+}
+
 .main .main-left .form .input-field input {
     width: 100%;
-    padding: 1rem;
+    padding: .8rem;
     color: #5c547f;
     background-color: #f2f2f2;
     border: none;
@@ -81,6 +87,7 @@ body {
 
 .main .main-left .form .input-field img {
     width: 1rem;
+    cursor: pointer;
 }
 
 .main .main-left .form .form-ps {
@@ -116,6 +123,10 @@ body {
     padding: 1rem 0;
 }
 
+.main .main-left .form .form-TC input{
+    margin-top: .5rem;
+}
+
 .main .main-left .form .form-TC p {
     display: block;
     padding: 0;
@@ -133,16 +144,17 @@ body {
     width: 100%;
     padding: 1rem;
     color: #fceffc;
-    background-image: linear-gradient(to left, #90247a, #4f2378);
+    background: linear-gradient(to left, #90247a, #4f2378);
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: all 2s ease-in-out .3s; /*Transition does not seem to work */
 }
 
 .main .main-left .form .form-button button:hover {
-    background-image: linear-gradient(to left, rgba(144, 36, 122, .9), rgba(79, 35, 120, .9));
+    background: linear-gradient(to left, #4f2378, #90247a);
 }
 
 .main .main-left .create .create-with {
@@ -162,6 +174,7 @@ body {
 
 .main .main-left .create .create-with > div hr {
     width: 100%;
+    margin-top: .3rem;
 }
 
 .main .main-left .create .create-with > p {
@@ -179,6 +192,8 @@ body {
 
 .main .main-left .socials img {
     width: 2rem;
+    margin-top: .5rem;
+    cursor: pointer;
 }
 
 .main .main-left .login {
@@ -192,12 +207,10 @@ body {
 .main .main-left .login span {
     color: #a36a9a;
     font-weight: bold;
+    cursor: pointer;
 }
 
-
-
 /* MAIN RIGHT */
-
 .main-right {
     display: flex;
     justify-content: center;
@@ -216,5 +229,4 @@ body {
     width: 80%;
     margin: 0 auto;
     box-sizing: border-box;
-    /* border: 2px solid orange; */
 }

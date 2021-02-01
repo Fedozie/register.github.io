@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Jabari | Register</title>
 </head>
 <body>
 
@@ -19,17 +22,18 @@
                 <form class="form" action="">
                     
                     <div class="form-email">
-                        <span>Email</span>
+                        <label for="login-email">Email</label>
                         <div class="input-field">
-                            <input type="email" name="" id="">
+                            <input type="email" name="" id="login-email" autocomplete="off">
                             <img src="imgs/envelope.svg" alt="">
                         </div>
+                        <span id="text"></span>
                     </div>
 
                     <div class="form-password">
-                        <span>Password</span>
+                        <label for="password">Password</label>
                         <div class="input-field">
-                            <input type="password" name="" id="">
+                            <input type="password" name="" id="password" autocomplete="off">
                             <img src="imgs/view.svg" alt="">
                         </div>
 
@@ -44,7 +48,7 @@
                     </div>
 
                     <div class="form-TC">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="" id="checkbox">
                         <p>Click here to indicate that you have read and agree to the terms presented in the <a href="#">Terms and Conditions</a> agreement</p>
                     </div>
 
@@ -75,12 +79,9 @@
                     <img src="imgs/Illustration.svg" alt="">
                 </div>
             </div>
-        
-        
-        
-        
-        
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
